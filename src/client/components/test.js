@@ -7,7 +7,15 @@ export const Tetris = () => {
 }
 
 export const Board = () => {
-  return (
-    <div/>
-  )
-}
+  return board.map((row, index) => {
+      return (
+        <div
+          style={{
+            backgroundColor: row ? 'black' : 'white',
+            width: '10px',
+            height: '10px'
+          }}
+        />
+      )
+    })
+  }

@@ -33,6 +33,7 @@ const initEngine = io => {
     socket.on('action', (action) => {
       if(action.type === 'server/ping'){
         socket.emit('action', {type: 'pong'})
+        //renvoyer le tableau tout a true
       }
     })
   })

@@ -1,5 +1,6 @@
 export const ping = () => {
   return {
-    type: 'server/ping'
+    type: 'server/ping',
+    payloaod: ''/*array du server */
   }
 }
