@@ -9,7 +9,7 @@ import reducer from './reducers'
 import App from './containers/app'
 import {alert} from './actions/alert'
 
-const initialState = {}
+const initialState = (window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()) || {}
 
 const store = createStore(
   reducer,
